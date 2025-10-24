@@ -89,7 +89,7 @@ def main():
     ap = argparse.ArgumentParser(description="Encode binary to MFM WAV.")
     ap.add_argument("input", help="Input binary file")
     ap.add_argument("output", help="Output WAV path")
-    ap.add_argument("--bitrate", type=int, default=2000, help="Bits per second (e.g., 1200–2400 for cassette)")
+    ap.add_argument("--bitrate", type=int, default=1000, help="Bits per second")
     ap.add_argument("--samplerate", type=int, default=48000, help="WAV sample rate (Hz)")
     ap.add_argument("--leader", type=float, default=2.0, help="Leader seconds (zeros before frame)")
     ap.add_argument("--trailer", type=float, default=0.5, help="Trailer seconds (zeros after frame)")
